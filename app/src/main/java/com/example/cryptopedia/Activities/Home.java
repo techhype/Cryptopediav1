@@ -1,6 +1,7 @@
 package com.example.cryptopedia.Activities;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.cryptopedia.Fragments.HomeFragment;
+import com.example.cryptopedia.Fragments.ProfileFragment;
+import com.example.cryptopedia.Fragments.SettingsFragment;
 import com.example.cryptopedia.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -113,12 +117,26 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            getSupportActionBar().setTitle("Home");
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
+
+
         } else if (id == R.id.nav_profile) {
+            getSupportActionBar().setTitle("Profile");
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProfileFragment()).commit();
 
         } else if (id == R.id.nav_settings) {
+            getSupportActionBar().setTitle("Settings");
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new SettingsFragment()).commit();
+
 
         } else if (id == R.id.nav_signout) {
+
+            FirebaseAuth.getInstance().signOut();
+            Intent loginActivity = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(loginActivity);
+            finish();
+
 
         }
 
