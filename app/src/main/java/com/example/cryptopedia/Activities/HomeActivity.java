@@ -1,7 +1,9 @@
-package com.example.cryptopedia;
+package com.example.cryptopedia.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.cryptopedia.R;
 
 public class HomeActivity extends AppCompatActivity {
 

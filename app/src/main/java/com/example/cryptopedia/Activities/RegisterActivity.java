@@ -1,4 +1,4 @@
-package com.example.cryptopedia;
+package com.example.cryptopedia.Activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.cryptopedia.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -214,7 +215,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void updateUI() {
 
-        Intent homeActivity = new Intent(getApplicationContext(),HomeActivity.class);
+        Intent homeActivity = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(homeActivity);
         finish();
 
