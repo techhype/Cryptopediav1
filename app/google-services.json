@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "249802865534",
+    "firebase_url": "https://cryptopedia-d92b4.firebaseio.com",
+    "project_id": "cryptopedia-d92b4",
+    "storage_bucket": "cryptopedia-d92b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249802865534:android:dcb7f7e57e4b6581",
+        "android_client_info": {
+          "package_name": "com.example.cryptopedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249802865534-67c0dukngjvag08kcnotdpso77am8vvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPfYcD6cE1eimTdZ3HReXZ-RRSJZrCOWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
