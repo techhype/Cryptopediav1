@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         loginProgress = findViewById(R.id.login_progress);
         mAuth = FirebaseAuth.getInstance();
 
-        HomeActivity = new Intent(this, com.example.cryptopedia.Activities.HomeActivity.class);
+        HomeActivity = new Intent(this, com.example.cryptopedia.Activities.Home.class);
 
         loginPhoto = findViewById(R.id.login_photo);
         loginPhoto.setOnClickListener(new View.OnClickListener() {
