@@ -96,6 +96,8 @@ public class Home extends AppCompatActivity
 
         updateNavHeader();
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
+
     }
 
     private void setupPopupImageClick() {
